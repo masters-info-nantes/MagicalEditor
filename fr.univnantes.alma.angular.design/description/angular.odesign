@@ -4,7 +4,7 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Class Diagram" domainClass="angular.Module" enablePopupBars="true">
       <metamodel href="../../fr.univnantes.alma.angular/model/angular.ecore#/"/>
       <defaultLayer name="Default">
-        <containerMappings name="CD_Class" domainClass="angular.ESClass">
+        <containerMappings name="CD_Class" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='ClassifierDirectEdit']" domainClass="angular.ESClass">
           <style xsi:type="style:FlatContainerStyleDescription" arcWidth="5" arcHeight="5" borderSizeComputationExpression="1" roundedCorner="true" widthComputationExpression="15" heightComputationExpression="12" foregroundColor="//@userColorsPalettes[name='Default%20Colors']/@entries[name='Default%20Class']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -21,6 +21,14 @@
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="NewClass"/>
                 </subModelOperations>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="BehaviourTools" label="Behaviour Tools">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="ClassifierDirectEdit" label="Classifier Direct Edit">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:arg0"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
