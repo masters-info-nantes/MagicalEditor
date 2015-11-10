@@ -86,7 +86,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_H1cNYIePEeWoL-I41Odj3w" name="NewClass!!!" width="15" height="12">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_H1cNYIePEeWoL-I41Odj3w" name="GreatAbstractClass" width="15" height="12">
         <target xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.0/@moduleElements.2"/>
         <semanticElements xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.0/@moduleElements.2"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_H1cNYYePEeWoL-I41Odj3w" borderSize="1" borderSizeComputationExpression="1" foregroundColor="210,228,252">

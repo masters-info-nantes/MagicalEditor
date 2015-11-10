@@ -4,7 +4,7 @@
     <modules>
       <moduleElements xsi:type="angular:ESClass" name="FirstClass"/>
       <moduleElements xsi:type="angular:ESClass" name="Toto"/>
-      <moduleElements xsi:type="angular:ESClass" name="NewClass!!!"/>
+      <moduleElements xsi:type="angular:ESClass" name="GreatAbstractClass"/>
     </modules>
     <modules>
       <moduleElements xsi:type="angular:ESClass" name="SpiderMan"/>
