@@ -5,10 +5,14 @@
       <moduleElements xsi:type="angular:ESClass" name="FirstClass"/>
       <moduleElements xsi:type="angular:ESClass" name="Toto"/>
       <moduleElements xsi:type="angular:ESClass" name="GreatAbstractClass"/>
+      <moduleElements xsi:type="angular:Field" name="NewField"/>
+      <moduleElements xsi:type="angular:Function" name="NewFunction"/>
     </modules>
     <modules>
       <moduleElements xsi:type="angular:ESClass" name="SpiderMan"/>
-      <moduleElements xsi:type="angular:ESClass" name="NewClass" abstract="true"/>
+      <moduleElements xsi:type="angular:ESClass" name="NewField" abstract="true">
+        <fields name="NewField"/>
+      </moduleElements>
     </modules>
   </folders>
 </angular:Project>
