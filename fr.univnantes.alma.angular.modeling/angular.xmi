@@ -8,6 +8,7 @@
     </modules>
     <modules>
       <moduleElements xsi:type="angular:ESClass" name="SpiderMan"/>
+      <moduleElements xsi:type="angular:ESClass" name="NewClass" abstract="true"/>
     </modules>
   </folders>
 </angular:Project>

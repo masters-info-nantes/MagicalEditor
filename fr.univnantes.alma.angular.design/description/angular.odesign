@@ -10,6 +10,13 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </style>
+          <conditionnalStyles predicateExpression="feature:abstract">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="5" arcHeight="5" borderSizeComputationExpression="1" roundedCorner="true" widthComputationExpression="15" heightComputationExpression="12" foregroundColor="//@userColorsPalettes[name='Default%20Colors']/@entries[name='Abstract%20Class']">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </conditionnalStyles>
         </containerMappings>
         <toolSections name="Elements">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="New ESClass" containerMappings="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']">
@@ -38,5 +45,6 @@
   </ownedViewpoints>
   <userColorsPalettes name="Default Colors">
     <entries xsi:type="description:UserFixedColor" red="210" green="228" blue="252" name="Default Class"/>
+    <entries xsi:type="description:UserFixedColor" red="240" green="216" blue="216" name="Abstract Class"/>
   </userColorsPalettes>
 </description:Group>
