@@ -114,8 +114,44 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Explorer Diagram" domainClass="angular.container" enablePopupBars="true">
-      <defaultLayer name="Default"/>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Explorer Diagram" domainClass="angular.Container" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="Folder" semanticCandidatesExpression="feature:folders" doubleClickDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DoubleClick']" domainClass="angular.Folder">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="15" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/fr.univnantes.alma.angular/icons/folder_documents_512x512.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+          <conditionnalStyles predicateExpression="aql:self.pages.size() + self.modules.size() = 0">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="15" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/fr.univnantes.alma.angular/icons/folder_512x512.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="Module" semanticCandidatesExpression="feature:modules" domainClass="angular.Module">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="15" showIcon="false" labelExpression="feature:path" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/fr.univnantes.alma.angular/icons/js_512x512.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Pages" semanticCandidatesExpression="feature:pages" domainClass="angular.HTML">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="15" showIcon="false" labelExpression="feature:path" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/fr.univnantes.alma.angular/icons/html_512x512.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <toolSections name="Behavior">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="DoubleClick" mappings="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer/@nodeMappings[name='Folder']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="fr.univnantes.alma.angular.internal.services.NamingServices"/>
   </ownedViewpoints>

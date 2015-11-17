@@ -7,6 +7,8 @@
     xsi:schemaLocation="http://www.univnantes.fr/alma/angular ../fr.univnantes.alma.angular/model/angular.ecore"
     name="TestProject">
   <folders>
+    <folders
+        name="SubFolder"/>
     <modules
         path="app/common.js"/>
     <modules
@@ -45,5 +47,7 @@
             name="NewField"/>
       </moduleElements>
     </modules>
+    <pages path="index.html"/>
+    <pages path="admin.html"/>
   </folders>
 </angular:Project>
