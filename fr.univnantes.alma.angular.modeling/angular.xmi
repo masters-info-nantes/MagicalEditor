@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<angular:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angular="http://www.univnantes.fr/alma/angular" xsi:schemaLocation="http://www.univnantes.fr/alma/angular ../fr.univnantes.alma.angular/model/angular.ecore">
+<angular:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angular="http://www.univnantes.fr/alma/angular" xsi:schemaLocation="http://www.univnantes.fr/alma/angular ../fr.univnantes.alma.angular/model/angular.ecore" name="TestProject">
   <folders>
-    <modules>
-      <moduleElements xsi:type="angular:ESClass" name="FirstClass"/>
-      <moduleElements xsi:type="angular:ESClass" name="Toto"/>
-      <moduleElements xsi:type="angular:ESClass" name="GreatAbstractClass"/>
-      <moduleElements xsi:type="angular:Field" name="NewField"/>
-      <moduleElements xsi:type="angular:Function" name="NewFunction"/>
-    </modules>
-    <modules>
-      <moduleElements xsi:type="angular:ESClass" name="SpiderMan"/>
-      <moduleElements xsi:type="angular:ESClass" name="NewField" abstract="true">
+    <modules path="app/common.js"/>
+    <modules path="app/users.js">
+      <moduleElements xsi:type="angular:ESClass" name="NewUser"/>
+      <moduleElements xsi:type="angular:ESClass" name="Users" abstract="true">
         <fields name="NewField"/>
+        <functions name="NewFunction" type="Type"/>
+      </moduleElements>
+      <moduleElements xsi:type="angular:ESClass" name="Salut">
+        <functions name="NewFunction"/>
+      </moduleElements>
+      <moduleElements xsi:type="angular:ESClass" name="UpdateUser">
+        <fields name="NewField" type="NewType"/>
       </moduleElements>
     </modules>
   </folders>

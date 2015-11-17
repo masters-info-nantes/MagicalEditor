@@ -5,15 +5,15 @@
       <metamodel href="../../fr.univnantes.alma.angular/model/angular.ecore#/"/>
       <defaultLayer name="Default">
         <containerMappings name="CD_Class" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='ClassifierDirectEdit']" domainClass="angular.ESClass" childrenPresentation="List">
-          <subNodeMappings name="Field" domainClass="angular.Field">
-            <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
+          <subNodeMappings name="Field" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DirectEditField']" semanticCandidatesExpression="feature:fields" domainClass="angular.Field">
+            <style xsi:type="style:SquareDescription" labelExpression="aql:self.type + ' ' + self.name" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
           </subNodeMappings>
-          <subNodeMappings name="Function" domainClass="angular.Function">
-            <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
+          <subNodeMappings name="Function" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DirectEditFunction']" semanticCandidatesExpression="feature:functions" domainClass="angular.Function">
+            <style xsi:type="style:SquareDescription" labelExpression="aql:self.type + ' ' + self.name + ' ' + self.parameters" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
@@ -68,11 +68,19 @@
           </ownedTools>
         </toolSections>
         <toolSections name="BehaviourTools" label="Behaviour Tools">
-          <ownedTools xsi:type="tool:DirectEditLabel" name="ClassifierDirectEdit" label="Classifier Direct Edit">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="ClassifierDirectEdit">
             <mask mask="{0}"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="service:toCamelCase(arg0)"/>
             </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="DirectEditFunction">
+            <mask mask="{0}"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="DirectEditField">
+            <mask mask="{0}"/>
+            <initialOperation/>
           </ownedTools>
         </toolSections>
       </defaultLayer>
