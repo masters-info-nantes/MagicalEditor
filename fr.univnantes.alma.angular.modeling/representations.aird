@@ -340,9 +340,25 @@
               <styles xmi:type="notation:FilteringStyle" xmi:id="_clMoc40KEeWKOKZ31muDWQ"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_clMBYY0KEeWKOKZ31muDWQ" fontName=".SF NS Text" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_clMBYo0KEeWKOKZ31muDWQ" x="256" y="216"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_clMBYo0KEeWKOKZ31muDWQ" x="220" y="184"/>
           </children>
           <styles xmi:type="notation:DiagramStyle" xmi:id="_ck8w0o0KEeWKOKZ31muDWQ"/>
+          <edges xmi:type="notation:Edge" xmi:id="_FuXy8I0QEeWKOKZ31muDWQ" type="4001" element="_Ft88MI0QEeWKOKZ31muDWQ" source="_clJlII0KEeWKOKZ31muDWQ" target="_clMBYI0KEeWKOKZ31muDWQ">
+            <children xmi:type="notation:Node" xmi:id="_FuZoII0QEeWKOKZ31muDWQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FuZoIY0QEeWKOKZ31muDWQ" x="-3" y="-4"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Fua2QI0QEeWKOKZ31muDWQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fua2QY0QEeWKOKZ31muDWQ" x="3" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_FubdUI0QEeWKOKZ31muDWQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FubdUY0QEeWKOKZ31muDWQ" x="3" y="8"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_FuYaAI0QEeWKOKZ31muDWQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_FuYaAY0QEeWKOKZ31muDWQ" fontName=".SF NS Text" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FuYaAo0QEeWKOKZ31muDWQ" points="[0, 0, 24, -66]$[-24, 66, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FudSgI0QEeWKOKZ31muDWQ" id="(0.7027027027027027,1.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FudSgY0QEeWKOKZ31muDWQ" id="(0.4594594594594595,0.0)"/>
+          </edges>
         </data>
       </ownedAnnotationEntries>
       <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ckuHU40KEeWKOKZ31muDWQ" name="NewUser" width="15" height="12">
@@ -353,7 +369,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ckuHVY0KEeWKOKZ31muDWQ" name="Users" width="15" height="12">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ckuHVY0KEeWKOKZ31muDWQ" name="Users" outgoingEdges="_Ft88MI0QEeWKOKZ31muDWQ" width="15" height="12">
         <target xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.1/@moduleElements.1"/>
         <semanticElements xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.1/@moduleElements.1"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_fXxdwI0KEeWKOKZ31muDWQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="240,216,216">
@@ -393,7 +409,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']/@subNodeMappings[name='Function']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ckuHWY0KEeWKOKZ31muDWQ" name="UpdateUser" width="15" height="12">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ckuHWY0KEeWKOKZ31muDWQ" name="UpdateUser" incomingEdges="_Ft88MI0QEeWKOKZ31muDWQ" width="15" height="12">
         <target xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.1/@moduleElements.3"/>
         <semanticElements xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.1/@moduleElements.3"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -411,6 +427,14 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']/@subNodeMappings[name='Field']"/>
         </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Ft88MI0QEeWKOKZ31muDWQ" sourceNode="_ckuHVY0KEeWKOKZ31muDWQ" targetNode="_ckuHWY0KEeWKOKZ31muDWQ">
+        <target xmi:type="angular:ESClass" href="angular.xmi#//@folders.0/@modules.1/@moduleElements.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_FuEQ8I0QEeWKOKZ31muDWQ" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='Extends']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_FuEQ8Y0QEeWKOKZ31muDWQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='Extends']"/>
       </ownedDiagramElements>
       <description xmi:type="description_1:DiagramDescription" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']"/>
       <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_ckuHW40KEeWKOKZ31muDWQ"/>

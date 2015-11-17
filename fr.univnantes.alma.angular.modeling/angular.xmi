@@ -4,7 +4,7 @@
     <modules path="app/common.js"/>
     <modules path="app/users.js">
       <moduleElements xsi:type="angular:ESClass" name="NewUser"/>
-      <moduleElements xsi:type="angular:ESClass" name="Users" abstract="true">
+      <moduleElements xsi:type="angular:ESClass" name="Users" extends="//@folders.0/@modules.1/@moduleElements.3" abstract="true">
         <fields name="NewField"/>
         <functions name="NewFunction" type="Type"/>
       </moduleElements>
