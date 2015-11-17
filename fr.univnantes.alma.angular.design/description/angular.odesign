@@ -13,7 +13,7 @@
           </style>
         </edgeMappings>
         <containerMappings name="CD_Class" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='ClassifierDirectEdit']" domainClass="angular.ESClass" childrenPresentation="List">
-          <subNodeMappings name="Field" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DirectEditField']" semanticCandidatesExpression="feature:fields" domainClass="angular.Field">
+          <subNodeMappings name="Field" deletionDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteField']" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DirectEditField']" semanticCandidatesExpression="feature:fields" domainClass="angular.Field">
             <style xsi:type="style:SquareDescription" labelExpression="aql:self.type + ' ' + self.name" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -21,7 +21,7 @@
             </style>
           </subNodeMappings>
           <subNodeMappings name="Function" labelDirectEdit="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DirectEditFunction']" semanticCandidatesExpression="feature:functions" domainClass="angular.Function">
-            <style xsi:type="style:SquareDescription" labelExpression="aql:self.type + ' ' + self.name + ' ' + self.parameters" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" labelExpression="aql:self.name + '(' + self.parameters->collect(p | p.name + ':' + p.type)->sep(', ') + ')' + ':' + self.type" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
@@ -85,6 +85,16 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteField" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="fields" elementExpression="aql:element"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <toolSections name="BehaviourTools" label="Behaviour Tools">
           <ownedTools xsi:type="tool:DirectEditLabel" name="ClassifierDirectEdit">
@@ -103,6 +113,9 @@
           </ownedTools>
         </toolSections>
       </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Explorer Diagram" domainClass="angular.container" enablePopupBars="true">
+      <defaultLayer name="Default"/>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="fr.univnantes.alma.angular.internal.services.NamingServices"/>
   </ownedViewpoints>
