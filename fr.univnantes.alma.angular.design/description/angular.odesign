@@ -161,6 +161,41 @@
             </menuItemDescription>
           </ownedTools>
         </toolSections>
+        <toolSections name="Elements">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="NewFolder" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer/@nodeMappings[name='Folder']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="angular.Folder" referenceName="folders">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="NewFolder"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="NewModule" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer/@nodeMappings[name='Module']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="angular.Module" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="NewModule"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="NewPage" nodeMappings="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer/@nodeMappings[name='Pages']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="angular.HTML" referenceName="pages">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="NewPage"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="fr.univnantes.alma.angular.internal.services.NamingServices"/>

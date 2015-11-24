@@ -1,50 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<angular:Project
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:angular="http://www.univnantes.fr/alma/angular"
-    xsi:schemaLocation="http://www.univnantes.fr/alma/angular ../fr.univnantes.alma.angular/model/angular.ecore"
-    name="TestProject">
+<angular:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angular="http://www.univnantes.fr/alma/angular" xsi:schemaLocation="http://www.univnantes.fr/alma/angular ../fr.univnantes.alma.angular/model/angular.ecore" name="TestProject">
   <folders>
-    <folders
-        name="SubFolder"/>
-    <modules
-        path="app/common.js"/>
-    <modules
-        path="app/users.js">
-      <moduleElements
-          xsi:type="angular:ESClass"
-          name="NewUser"/>
-      <moduleElements
-          xsi:type="angular:ESClass"
-          name="Users"
-          extends="//@folders.0/@modules.1/@moduleElements.3"
-          abstract="true">
-        <fields
-            name="NewField"/>
-        <functions
-            name="NewFunction"
-            type="Type">
-          <parameters
-              name="name"
-              type="String"/>
+    <folders name="SubFolder"/>
+    <modules path="app/common.js"/>
+    <modules path="app/users.js">
+      <moduleElements xsi:type="angular:ESClass" name="NewUser"/>
+      <moduleElements xsi:type="angular:ESClass" name="Users" extends="//@folders.0/@modules.1/@moduleElements.3" abstract="true">
+        <fields name="NewField"/>
+        <functions name="NewFunction" type="Type">
+          <parameters name="name" type="String"/>
         </functions>
       </moduleElements>
-      <moduleElements
-          xsi:type="angular:ESClass"
-          name="Salut">
-        <functions
-            name="NewFunction"/>
+      <moduleElements xsi:type="angular:ESClass" name="Salut">
+        <functions name="NewFunction"/>
       </moduleElements>
-      <moduleElements
-          xsi:type="angular:ESClass"
-          name="UpdateUser">
-        <fields
-            name="NewField"
-            type="NewType"/>
-        <fields
-            name="NewField"/>
+      <moduleElements xsi:type="angular:ESClass" name="UpdateUser">
+        <fields name="NewField" type="NewType"/>
+        <fields name="NewField"/>
       </moduleElements>
     </modules>
     <pages path="index.html"/>
