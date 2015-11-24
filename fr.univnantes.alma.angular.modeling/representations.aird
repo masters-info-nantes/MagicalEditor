@@ -298,20 +298,6 @@
       <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer"/>
       <target xmi:type="angular:Folder" href="angular.xmi#//@folders.0"/>
     </ownedRepresentations>
-    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_jUUtsI0cEeWKOKZ31muDWQ" name="Explorer Diagram">
-      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_jUUtsY0cEeWKOKZ31muDWQ" source="DANNOTATION_CUSTOMIZATION_KEY">
-        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_jUVUwI0cEeWKOKZ31muDWQ"/>
-      </ownedAnnotationEntries>
-      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_jUWi4I0cEeWKOKZ31muDWQ" source="GMF_DIAGRAMS">
-        <data xmi:type="notation:Diagram" xmi:id="_jUWi4Y0cEeWKOKZ31muDWQ" type="Sirius" element="_jUUtsI0cEeWKOKZ31muDWQ" measurementUnit="Pixel">
-          <styles xmi:type="notation:DiagramStyle" xmi:id="_jUWi4o0cEeWKOKZ31muDWQ"/>
-        </data>
-      </ownedAnnotationEntries>
-      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']"/>
-      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_jUVUwY0cEeWKOKZ31muDWQ"/>
-      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Explorer%20Diagram']/@defaultLayer"/>
-      <target xmi:type="angular:Folder" href="angular.xmi#//@folders.0/@folders.0"/>
-    </ownedRepresentations>
     <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/fr.univnantes.alma.angular.design/description/angular.odesign#//@ownedViewpoints[name='Architecture']"/>
   </ownedViews>
 </viewpoint:DAnalysis>

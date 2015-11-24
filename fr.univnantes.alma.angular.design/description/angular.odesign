@@ -150,6 +150,16 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool_1:PopupMenu" name="OpenDetail">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="ClassDiagram" forceRefresh="true">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var::element">
+                  <subModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Class%20Diagram']"/>
+                </firstModelOperations>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
