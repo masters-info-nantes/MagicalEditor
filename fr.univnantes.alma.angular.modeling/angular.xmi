@@ -18,10 +18,10 @@
       <moduleElements xsi:type="angular:ESClass" name="UpdateUser">
         <fields name="NewField" type="NewType"/>
       </moduleElements>
-      <moduleElements xsi:type="angular:NgDirective" name="NewNgDirective"/>
+      <moduleElements xsi:type="angular:NgDirective" name="NewNgDirective" controller="//@folders.0/@modules.1/@moduleElements.6" dependencies="//@folders.0/@modules.1/@moduleElements.5"/>
       <moduleElements xsi:type="angular:NgModule" name="newNgModule"/>
-      <moduleElements xsi:type="angular:NgDirective" name="NewNgDirective"/>
       <moduleElements xsi:type="angular:NgService" name="newNgService"/>
+      <moduleElements xsi:type="angular:NgController" name="NewNgController" dependencies="//@folders.0/@modules.1/@moduleElements.5"/>
     </modules>
     <pages path="index.html"/>
     <pages path="admin.html"/>
