@@ -66,7 +66,8 @@
         eType="#//NgService"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NgDirective" eSuperTypes="#//ModuleElement #//NgModuleElement">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="esClass" eType="#//ESClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="controller" eType="#//NgController"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependencies" upperBound="-1"
