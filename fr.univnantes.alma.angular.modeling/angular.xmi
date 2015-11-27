@@ -10,23 +10,14 @@
     </modules>
     <modules path="app/users.js">
       <moduleElements xsi:type="angular:ESClass" name="NewUser"/>
-      <moduleElements xsi:type="angular:ESClass" name="Users" extends="//@folders.0/@modules.1/@moduleElements.3" abstract="true">
-        <fields name="NewField"/>
+      <moduleElements xsi:type="angular:ESClass" name="Users" extends="//@folders.0/@modules.1/@moduleElements.2" abstract="true">
         <functions name="NewFunction" type="Type">
           <parameters name="name" type="String"/>
         </functions>
       </moduleElements>
-      <moduleElements xsi:type="angular:ESClass" name="Salut">
-        <functions name="NewFunction"/>
-      </moduleElements>
       <moduleElements xsi:type="angular:ESClass" name="UpdateUser">
         <fields name="NewField" type="NewType"/>
-        <fields name="NewField"/>
       </moduleElements>
-    </modules>
-    <modules path="NewModule">
-      <moduleElements xsi:type="angular:NgController" name="NewNgController"/>
-      <moduleElements xsi:type="angular:NgDirective" name="NewNgDirective"/>
     </modules>
     <pages path="index.html"/>
     <pages path="admin.html"/>
