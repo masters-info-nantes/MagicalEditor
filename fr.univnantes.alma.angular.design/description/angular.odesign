@@ -230,7 +230,31 @@
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Component Diagram" domainClass="angular.Folder" enablePopupBars="true">
       <defaultLayer name="Default">
-        <containerMappings name="Module" label="Module" deletionDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DeleteModule']" semanticCandidatesExpression="feature:modules" domainClass="angular.Module" childrenPresentation="List">
+        <edgeMappings name="RelationController" sourceMapping="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='Module']/@subNodeMappings[name='NgController']" targetMapping="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='Module']/@subNodeMappings[name='NgService']" targetFinderExpression="feature:dependencies">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RelationDirective" sourceMapping="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='Module']/@subNodeMappings[name='NgDirective']" targetMapping="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='Module']/@subNodeMappings[name='NgService']" targetFinderExpression="feature:dependencies">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RelationDC" sourceMapping="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='Module']/@subNodeMappings[name='NgDirective']" targetMapping="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@containerMappings[name='Module']/@subNodeMappings[name='NgController']" targetFinderExpression="feature:controller">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Module" label="Module" deletionDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DeleteModule']" semanticCandidatesExpression="feature:modules" domainClass="angular.Module">
           <subNodeMappings name="NgService" deletionDescription="//@ownedViewpoints[name='Architecture']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DeleteNgService']" semanticCandidatesExpression="feature:moduleElements" domainClass="angular.NgService">
             <style xsi:type="style:BundledImageDescription" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>

@@ -18,6 +18,10 @@
       <moduleElements xsi:type="angular:ESClass" name="UpdateUser">
         <fields name="NewField" type="NewType"/>
       </moduleElements>
+      <moduleElements xsi:type="angular:NgDirective" name="NewNgDirective"/>
+      <moduleElements xsi:type="angular:NgModule" name="newNgModule"/>
+      <moduleElements xsi:type="angular:NgDirective" name="NewNgDirective"/>
+      <moduleElements xsi:type="angular:NgService" name="newNgService"/>
     </modules>
     <pages path="index.html"/>
     <pages path="admin.html"/>
